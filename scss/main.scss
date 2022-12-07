@@ -1,42 +1,10 @@
+// Variables
 @import "./common/variables";
 
+// Global styles
 @import "./base/global";
 
-.game {
-    width: 1000px;
-    height: 550px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    background: $white;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0px 167px 152px rgba(0, 0, 0, 0.07), 0px 154.8px 76.0742px rgba(0, 0, 0, 0.0532233), 0px 81.9974px 45.8236px rgba(0, 0, 0, 0.0456112), 0px 42.7506px 29.3661px rgba(0, 0, 0, 0.0399626), 0px 22.2435px 19.0328px rgba(0, 0, 0, 0.035), 0px 10.4281px 11.9809px rgba(0, 0, 0, 0.0300374), 0px 3.77335px 6.88378px rgba(0, 0, 0, 0.0243888), 0px 0.609363px 3.02973px rgba(0, 0, 0, 0.0167767);
-}
-
-.player {
-    width: 50%;
-    padding: 40px;
-
-    &-one {
-        background: $gray;
-    }
-}
-
-.dice-wrap {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    margin-left: -40px;
-    background: $white;
-    border-radius: 16px;
-    padding: 0;
-    width: 80px;
-    height: 80px;
-
-}
-
-.dice {
-    width: 80px;
-    height: 80px;
-}
+// Components
+@import "./components/game";
+@import "./components/player";
+@import "./components/dice";

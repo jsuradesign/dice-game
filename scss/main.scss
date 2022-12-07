@@ -1,6 +1,9 @@
 // Variables
 @import "./common/variables";
 
+// Mixins
+@import "./mixins/clearfix";
+
 // Global styles
 @import "./base/global";
 
@@ -8,3 +11,5 @@
 @import "./components/game";
 @import "./components/player";
 @import "./components/dice";
+@import "./components/game-rules";
+@import "./components/buttons";

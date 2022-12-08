@@ -1,12 +1,12 @@
 .game {
-  width: 1000px;
-  height: 550px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
   position: relative;
-  background: $white;
-  border-radius: 25px;
+  height: 300px;
+  background-color: $white;
   overflow: hidden;
+  border-radius: 25px;
+
   box-shadow: 0px 167px 152px rgba(0, 0, 0, 0.07),
     0px 154.8px 76.0742px rgba(0, 0, 0, 0.0532233),
     0px 81.9974px 45.8236px rgba(0, 0, 0, 0.0456112),
@@ -15,4 +15,13 @@
     0px 10.4281px 11.9809px rgba(0, 0, 0, 0.0300374),
     0px 3.77335px 6.88378px rgba(0, 0, 0, 0.0243888),
     0px 0.609363px 3.02973px rgba(0, 0, 0, 0.0167767);
+
+  @include media-breakpoint-up(xl) {
+    max-width: 1000px;
+    width: 1000px;
+    height: 550px;
+  }
+  //   width: 1000px;
+  //   height: 550px;
+  //   flex-direction: row;
 }

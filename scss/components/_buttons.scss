@@ -10,6 +10,7 @@
     background: $white;
     color: $dark-gray;
     border: 2px solid transparent;
+    z-index: 100;
 
     &:hover {
       background: transparent;
@@ -27,6 +28,23 @@
       background: $white;
       color: $dark-gray;
       border: 2px solid $dark-gray;
+    }
+  }
+
+  &.btn-action {
+    font-size: 0;
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      line-height: 0;
+
+      .icon {
+        margin-left: 12px;
+      }
     }
   }
 }

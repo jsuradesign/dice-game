@@ -1,0 +1,10 @@
+.actions-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+  //   position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}

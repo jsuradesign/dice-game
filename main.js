@@ -11,17 +11,16 @@ document.querySelector('.dice').src = "images/dice-" + dice + ".svg";
 // Pravidla hry
 let gameRules = document.querySelector('.game-rules');
 
-// Otevřít
+// Otevřít pravidla hry
 let openBtn = document.querySelector('.btn-open');
 openBtn.addEventListener('click', function(e) {
     gameRules.classList.add('show');
 });
 
-// Zavřít
+// Zavřít pravidla hry
 let closeBtn = document.querySelector('.btn-close');
 closeBtn.addEventListener('click', function(e) {
     gameRules.classList.remove('show');
-    console.log("click");
 });
 
 // Footer year

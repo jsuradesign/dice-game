@@ -13,19 +13,23 @@
       </div>
       <div class="game">
         <div class="player player-one active">
-          <div class="player-name">Hráč 1</div>
-          <div class="player-score">0</div>
+          <div class="player-name">
+            Hráč 1 <span class="indicator blinking"></span>
+          </div>
+          <div class="player-score" id="score-1">0</div>
           <div class="round-score">
             <div class="round-score-text">Body</div>
-            <div class="round-score-score">1</div>
+            <div class="round-score-score" id="round-score-0">1</div>
           </div>
         </div>
         <div class="player player-two">
-          <div class="player-name">Hráč 2</div>
-          <div class="player-score">100</div>
+          <div class="player-name">
+            Hráč 2<span class="indicator blinking"></span>
+          </div>
+          <div class="player-score" id="score-2">100</div>
           <div class="round-score">
             <div class="round-score-text">Body</div>
-            <div class="round-score-score">6</div>
+            <div class="round-score-score" id="round-score-1">6</div>
           </div>
         </div>
         <div class="dice-wrap">
@@ -33,19 +37,19 @@
         </div>
       </div>
       <div class="actions-wrap">
-        <button class="btn btn-action" id="play">
+        <button class="btn btn-action btn-play" id="play">
           Hoď
           <span class="icon"
             ><img src="./public/images/play.svg" alt=""
           /></span>
         </button>
-        <button class="btn btn-action" id="stop">
+        <button class="btn btn-action btn-stop" id="stop">
           Stop
           <span class="icon"
             ><img src="./public/images/stop.svg" alt=""
           /></span>
         </button>
-        <button class="btn btn-action" id="new-game">
+        <button class="btn btn-action btn-new-game" id="new-game">
           Nová hra
           <span class="icon"
             ><img src="./public/images/new-game.svg" alt=""
@@ -55,16 +59,13 @@
       <button class="btn btn-open">Pravidla hry</button>
     </div>
     <footer>
-      <div class="container">
-        Copyright &copy; <span class="footer-year"></span>
-        <a href="https://jan-sura.cz" target="_blank">Jan Sůra</a> | SourceCode
-        on
-        <a href="https://github.com/jsuradesign/dice-game" target="_blank"
-          >GitHub</a
-        >
-      </div>
+      Copyright &copy; <span class="footer-year"></span>
+      <a href="https://jan-sura.cz" target="_blank">Jan Sůra</a> | SourceCode on
+      <a href="https://github.com/jsuradesign/dice-game" target="_blank"
+        >GitHub</a
+      >
     </footer>
-    <div class="game-rules">
+    <!-- <div class="game-rules">
       <div class="game-rules-inner">
         <h2 class="game-rules__title">Pravidla hry</h2>
         <ol class="game-rules__text">
@@ -88,7 +89,7 @@
         </ol>
         <button class="btn btn-close">Zavřít pravidla hry</button>
       </div>
-    </div>
+    </div> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>

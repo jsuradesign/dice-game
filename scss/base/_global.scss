@@ -12,9 +12,11 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
+  position: relative;
   //   padding-top: 30vh;
+  padding-bottom: 80px;
   height: auto;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto;
   background: $primary;
@@ -23,6 +25,11 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, $secondary, $primary);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  @include media-breakpoint-up("md") {
+    min-height: 100vh;
+    padding-bottom: 160px;
+  }
 }
 
 .app {

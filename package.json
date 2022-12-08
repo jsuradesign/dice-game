@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "browserslist": [
-    "last 3 versions"
+    "last 4 versions",
+    "iOS >= 13"
   ],
   "scripts": {
     "dev": "vite",

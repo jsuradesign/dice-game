@@ -1,10 +1,17 @@
 .actions-wrap {
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  width: 100%;
-  //   position: absolute;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  //   position: absolute;
   z-index: 100;
+  margin-bottom: 24px;
+
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+    gap: 12px;
+  }
 }

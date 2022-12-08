@@ -6,6 +6,7 @@
 
 // Mixins
 @import "./mixins/breakpoints";
+@import "./mixins/orientation";
 @import "./mixins/clearfix";
 
 // Global styles
@@ -18,3 +19,4 @@
 @import "./components/game-rules";
 @import "./components/buttons";
 @import "./components/actions";
+@import "./components/animations";

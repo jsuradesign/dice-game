@@ -1,7 +1,11 @@
+// Functions
+@import "./common/functions";
+
 // Variables
 @import "./common/variables";
 
 // Mixins
+@import "./mixins/breakpoints";
 @import "./mixins/clearfix";
 
 // Global styles

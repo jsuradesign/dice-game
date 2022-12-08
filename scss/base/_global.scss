@@ -1,88 +1,96 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto;
-    background: $primary;  /* fallback for old browsers */
-    background: linear-gradient(to right, $secondary, $primary);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, $secondary, $primary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto;
+  background: $primary; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    $secondary,
+    $primary
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $secondary,
+    $primary
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-    margin-top: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin-top: -150px;
 }
 
 footer {
-    position: absolute;
-    bottom: 24px;
-    color: $dark-gray;
+  position: absolute;
+  bottom: 24px;
+  color: $dark-gray;
 }
 
 h2 {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 a {
-    color: $dark-gray;
+  color: $dark-gray;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ol {
-    list-style: none;
-    counter-reset: my-awesome-counter;
-  }
-  ol li {
-    counter-increment: my-awesome-counter;
-  }
-  ol li::before {
-    content: counter(my-awesome-counter) ". ";
-    color: red;
-    font-weight: bold;
-  }
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: red;
+  font-weight: bold;
+}
 
 ol {
-    list-style: none;
-    counter-reset: custom-counter;
-    line-height: 2;
+  list-style: none;
+  counter-reset: custom-counter;
+  line-height: 2;
 
-    li {
-        counter-increment: custom-counter;
-        margin-bottom: 8px;
+  li {
+    counter-increment: custom-counter;
+    margin-bottom: 8px;
 
-        &::before {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;;
-            width: 24px;
-            height: 24px;
-            line-height: 1;
-            content: counter(custom-counter);
-            background-color: $primary;
-            color: $white;
-            margin-right: 8px;
-            border-radius: 4px;
-        }
+    &::before {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      line-height: 1;
+      content: counter(custom-counter);
+      background-color: $primary;
+      color: $white;
+      margin-right: 8px;
+      border-radius: 4px;
     }
+  }
 }
 
 .clearfix {
-    @include clearfix;
+  @include clearfix;
 }

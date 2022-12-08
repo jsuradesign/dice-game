@@ -1,7 +1,11 @@
+// Functions
+@import "./common/functions";
+
 // Variables
 @import "./common/variables";
 
 // Mixins
+@import "./mixins/breakpoints";
 @import "./mixins/clearfix";
 
 // Global styles
@@ -13,3 +17,4 @@
 @import "./components/dice";
 @import "./components/game-rules";
 @import "./components/buttons";
+@import "./components/actions";

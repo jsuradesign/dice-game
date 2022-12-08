@@ -4,3 +4,13 @@ $white: #fff;
 $gray: darken($white, 3%);
 $dark-gray: #353535;
 $black: #000;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

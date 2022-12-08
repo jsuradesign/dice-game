@@ -41,12 +41,16 @@ body {
   padding: 0 16px;
 
   @include media-breakpoint-up(md) {
-    margin-top: 150px;
+    margin-top: 30px;
   }
 }
 
 .logo {
-  max-width: 80%;
+  max-width: 50%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 35%;
+  }
 
   img {
     max-width: 100%;

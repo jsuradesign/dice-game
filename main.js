@@ -110,19 +110,20 @@ function init() {
 }
 
 // Pravidla hry
-// let gameRules = document.querySelector('.game-rules');
+let gameRules = document.querySelector('.game-rules');
 
 // Otevřít pravidla hry
-// let openBtn = document.querySelector('.btn-open');
-// openBtn.addEventListener('click', function(e) {
-//     gameRules.classList.add('show');
-// });
+let openBtn = document.querySelector('.btn-open');
+openBtn.addEventListener('click', function() {
+    gameRules.classList.add('show');
+});
 
 // Zavřít pravidla hry
-// let closeBtn = document.querySelector('.btn-close');
-// closeBtn.addEventListener('click', function(e) {
-//     gameRules.classList.remove('show');
-// });
+let closeBtn = document.querySelector('.btn-close');
+closeBtn.addEventListener('click', function() {
+    console.log('close button');
+    gameRules.classList.remove('show');
+});
 
 // Footer year
 document.querySelector(".footer-year").textContent = new Date().getFullYear();

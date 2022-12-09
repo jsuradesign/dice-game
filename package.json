@@ -1,8 +1,20 @@
 {
-  "name": "dice-grame",
+  "name": "dice-game",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsuradesign/dice-game"
+  },
+  "author": {
+    "name": "Jan Sůra",
+    "url": "https://jan-sura.cz",
+    "email": "info@jsuradesign.cz"
+  },
+  "bugs": {
+    "url": "https://github.com/jsuradesign/dice-game/issues"
+  },
+  "homepage": "https://github.com/jsuradesign/dice-game#readme",
   "browserslist": [
     "last 4 versions",
     "iOS >= 13"

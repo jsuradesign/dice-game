@@ -84,7 +84,7 @@ function init() {
     score = [0, 0];
     activePlayer = 0;
     roundScore = 0;
-    finalScore = 25;
+    finalScore = 100;
     gameInProgress = true;
 
     document.querySelector('.dice-wrap').style.display = 'none';

@@ -1,34 +1,34 @@
 {
-  "name": "dice-game",
-  "private": true,
-  "version": "0.1.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsuradesign/dice-game"
-  },
-  "author": {
-    "name": "Jan Sůra",
-    "url": "https://jan-sura.cz",
-    "email": "info@jsuradesign.cz"
-  },
-  "bugs": {
-    "url": "https://github.com/jsuradesign/dice-game/issues"
-  },
-  "homepage": "https://github.com/jsuradesign/dice-game#readme",
-  "browserslist": [
-    "last 4 versions",
-    "iOS >= 13"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.19",
-    "sass": "^1.56.1",
-    "vite": "^3.2.3"
-  },
-  "dependencies": {}
+    "name": "dice-game",
+    "private": true,
+    "version": "1.1.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jsuradesign/dice-game"
+    },
+    "author": {
+        "name": "Jan Sůra",
+        "url": "https://jan-sura.cz",
+        "email": "info@jsuradesign.cz"
+    },
+    "bugs": {
+        "url": "https://github.com/jsuradesign/dice-game/issues"
+    },
+    "homepage": "https://github.com/jsuradesign/dice-game#readme",
+    "browserslist": [
+        "last 4 versions",
+        "iOS >= 13"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "postcss": "^8.4.19",
+        "sass": "^1.56.1",
+        "vite": "^3.2.3"
+    },
+    "dependencies": {}
 }

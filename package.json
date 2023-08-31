@@ -1,7 +1,7 @@
 {
     "name": "dice-game",
     "private": true,
-    "version": "1.1.0",
+    "version": "1.1.2",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jsuradesign/dice-game"

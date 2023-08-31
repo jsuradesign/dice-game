@@ -40,7 +40,9 @@ document.querySelector(".btn-play").addEventListener("click", function () {
             }, 2000);
         } else {
             // Přepnout hráče
-            nextPlayer();
+            setTimeout(function () {
+                nextPlayer();
+            }, 2000);
         }
     }
 });

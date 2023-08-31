@@ -32,9 +32,12 @@ document.querySelector(".btn-play").addEventListener("click", function () {
         // Aktualizovat body v aktuálním kole
         if (dice !== 1) {
             // Přidat body
-            roundScore += dice;
-            document.querySelector("#round-score-" + activePlayer).textContent =
-                roundScore;
+            setTimeout(function () {
+                roundScore += dice;
+                document.querySelector(
+                    "#round-score-" + activePlayer
+                ).textContent = roundScore;
+            }, 2000);
         } else {
             // Přepnout hráče
             nextPlayer();
